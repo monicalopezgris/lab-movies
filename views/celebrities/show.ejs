@@ -1,8 +1,8 @@
-<div>
+<div class='details'>
   <h2><%= celebrity.name%></h2>
-  <p><%= celebrity.ocupation%></p>
-  <p><%= celebrity.catchPhrase%></p>
+  <p><span class='bold'>Ocupation: </span><%= celebrity.ocupation%></p>
+  <p><span class='bold'>Phrase: </span><%= celebrity.catchPhrase%></p>
+</div>
   <a href="/celebrities/<%= celebrity._id%>/edit">
     <button>Edit</button>
   </a>
-</div>

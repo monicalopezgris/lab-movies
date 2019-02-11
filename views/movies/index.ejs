@@ -1,13 +1,14 @@
 <div>
   <h2>Celebrities list</h2>
   <% film.forEach((movie) => {%>
-    <a href="movies/<%- movie._id%>">
-      <%- movie.title%>
-    </a> 
-    <form action="movies/<%- movie._id%>/delete" method="post">
-      <button type="submit">Delete</button>
-    </form>
-    </br>
+    <div class='list'>
+      <a href="movies/<%- movie._id%>">
+        <%- movie.title%>
+      </a> 
+      <form action="movies/<%- movie._id%>/delete" method="post">
+        <button type="submit">Delete</button>
+      </form>
+    </div>
   <%})%>
   <a href="movies/new">
     <button>Create new</button>
